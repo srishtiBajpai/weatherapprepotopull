@@ -1,8 +1,8 @@
 module.exports=async function(location){
 
-var getlocation= require("../utilities/location")
-var getweather = require("../utilities/weather")
-
+var getlocation= require("../utilities/location")    // exporting location
+var getweather = require("../utilities/weather")    // exporting weather
+                                                       
 var mylocation= location||await getlocation()
 var weather = await getweather(mylocation)
 
